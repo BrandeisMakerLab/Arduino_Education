@@ -14,7 +14,8 @@ void setup() {
   //connect the arduino to the computer
   Serial.begin(9600);
   //create a list of pin numbers
-  int pins []={5,6,7,8,9,11,12};
+  //the arraysize has to be here, don't know why
+  int pins [7]={5,6,7,8,9,11,12};
   //pass the pins to the test program, and also give the list size
   test.begin(pins,ARRAY_SIZE(pins));
 
