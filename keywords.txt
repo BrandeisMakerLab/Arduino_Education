@@ -1,3 +1,12 @@
 ArduinoEducation	KEYWORD1
 begin	KEYWORD2
 printPins KEYWORD2
+
+Display	KEYWORD1
+begin	KEYWORD2
+showMeter	KEYWORD2
+
+//Generates ARDUINO KEYWORDS for DistanceSensor class
+DistanceSensor	KEYWORD1
+begin	KEYWORD2
+getDistance	KEYWORD2
