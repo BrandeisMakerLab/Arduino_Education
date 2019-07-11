@@ -1,7 +1,6 @@
 /* Jacob Smith Brandeis Automation Lab
  *  7/7/2019 Prints Hello World For Training
- *  Workshop
- *  https://docs.google.com/forms/d/e/1FAIpQLScURYyY_hUNF2X8EQME6llJOXHmROwZJMfLtjrNEqMNa3TjoQ/formResponse
+ *  Workshop showing use of loops
 */
 //runs once
 void setup() {
@@ -9,8 +8,8 @@ void setup() {
   Serial.begin(9600);
   //wait for connection to start
   delay(2000);
-  //print hello world to screen
-  Serial.println("Hello World!");
 }
 
-void loop() {}
+void loop() {
+  Serial.println("Hello World!");
+}

@@ -1,7 +1,6 @@
 /* Jacob Smith Brandeis Automation Lab
  *  7/7/2019 Prints Hello World For Training
  *  Workshop
- *  https://docs.google.com/forms/d/e/1FAIpQLScURYyY_hUNF2X8EQME6llJOXHmROwZJMfLtjrNEqMNa3TjoQ/formResponse
 */
 //runs once
 void setup() {
@@ -11,6 +10,7 @@ void setup() {
   delay(2000);
   //print hello world to screen
   Serial.println("Hello World!");
+  Serial.println("This is Jacob");
 }
 
 void loop() {}
