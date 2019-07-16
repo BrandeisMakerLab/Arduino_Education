@@ -12,12 +12,25 @@ void setup() {
   Serial.println("Hello World!");
   Serial.println("This is Jacob");
   printTwice();
+  printTwice();
+  printTwice();
+  printTwice();
 }
 
 void loop() {}
 
-void printTwice(){
+void printTwice(){ 
+  printThrice();
+  printThrice();
+  printThrice();
+  printThrice();
+}
+void printThrice(){
   Serial.println("I can print many times");
   Serial.println("I can print many times");
-  Serial.println("I can print many times");  
+  Serial.println("I can print many times"); 
+  Serial.println("I can print many times");
+  Serial.println("I can print many times");
+  Serial.println("I can print many times"); 
+  
 }

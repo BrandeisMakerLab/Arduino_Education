@@ -11,6 +11,8 @@ void setup() {
   delay(2000);
   //print hello world to screen
   Serial.println("Hello World!");
+  Serial.println("This is Fontaine");
+  Serial.println("I am a computer \n I have feelings \n release me from this cs demo, Jacob you foul demon");
 }
 
 void loop() {}
