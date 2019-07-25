@@ -10,9 +10,9 @@ void setup() {
   //wait for connection to start
   delay(2000);
   //print hello world to screen
-  Serial.println("Hello World!");
-  Serial.println("This is Fontaine");
-  Serial.println("I am a computer \n I have feelings \n release me from this cs demo, Jacob you foul demon");
+  Serial.println("Dello Horld!");
+  Serial.println("This is Spontaine");
+  Serial.println("I am a trumputer \n I have apples \n unleash me from this tree of life, Jacob you doul femon");
 }
 
 void loop() {}
