@@ -9,10 +9,13 @@ void setup() {
   Serial.begin(9600);
   //wait for connection to start
   delay(2000);
+  Serial.println("NAT ANND JANICE ARE OUTTIE BIDDIES :)");
+  Serial.println("NAT ANND JANICE ARE OUTTIE BIDDIES :)");
+  Serial.println("NAT ANND JANICE ARE OUTTIE BIDDIES :)");
   //print hello world to screen
-  Serial.println("Hello World!");
-  Serial.println("This is Fontaine");
-  Serial.println("I am a computer \n I have feelings \n release me from this cs demo, Jacob you foul demon");
+  //Serial.println("Hello World!");
+//Serial.println("This is Fontaine");
+ // Serial.println("I am a computer \n I have feelings \n release me from this cs demo, Jacob you foul demon");
 }
 
 void loop() {}

@@ -19,18 +19,18 @@ void setup() {
 
 void loop() {}
 
-void printTwice(){ 
+void printTwice(){
   printThrice();
   printThrice();
   printThrice();
   printThrice();
 }
 void printThrice(){
-  Serial.println("I can print many times");
-  Serial.println("I can print many times");
-  Serial.println("I can print many times"); 
-  Serial.println("I can print many times");
-  Serial.println("I can print many times");
-  Serial.println("I can print many times"); 
+  Serial.println("Janice and Nat rock");
+  Serial.println("Janice and Nat rock");
+  Serial.println("Janice and Nat rock"); 
+  Serial.println("Janice and Nat rock");
+  Serial.println("Janice and Nat rock");
+  Serial.println("Janice and Nat rock"); 
   
 }
