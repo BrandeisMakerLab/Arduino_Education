@@ -1,0 +1,41 @@
+FIND OUT ABOUT MAKERSPACES AND LEARNING
+makerspace for programming
+review article
+a review of university maker spaces
+
+HOW ARE ONLINE MAKERSPACES DESIGNED?
+look at literature
+collaborative space?
+	if so, is it same time, different place? different time, 
+	differnet place?
+cooperative space?
+	like scratch?
+	scratch, but for electronics
+what is the larger context (part of blended class)?
+(face to face, online, what would online piece be?)
+Is this online or physical or both?
+	physical +technology
+Motive for background research
+	survey what's out there
+	identify more interesting stuff
+
+DESIGN
+	paper prototype
+	slide presentation
+DELIVERABLE
+	build something that people will use
+	they will use it to support them
+	Why can't I do this with a textbook
+		software platform is more interactive, people will learn more
+		lecture hall, lecture, homework
+		but we don't do that anymore
+				
+11:56 AM, met with Professor Alterman, calling 11:10 AM start today
+	This meeting helped me pitch my electronics workshop
+	It really is an electronics applciation to introductory computer science, 
+		that's where my motive is
+	It looks like Professor ALterman's specialty is integrating technology into education,
+	so if I want to design an app or website to convey the curriculum I can do that
+		maybe have live feedback for programs
+	
+
