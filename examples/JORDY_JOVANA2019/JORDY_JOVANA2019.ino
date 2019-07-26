@@ -18,8 +18,7 @@ void setup() {
   //sets up the class
   distancesensor.begin(10, 11);
   //sets up the class with minimum and maximum values
-  Serial.begin(9600);
-  pinMode(2, OUTPUT);
+  Serial.begin(9600); pinMode(2, OUTPUT);
 }
 
 //runs many times
@@ -29,15 +28,12 @@ void loop() {
   //displays the distance to the ultrasonic sensor
   //display.showMeter("Distance",distance);
   Serial.println(distance);
-
-
-
-  // the loop function runs over and over again forever
-  if (distance < 10) {
+  if (distance > 00 && distance < 100) {
+    Serial.println("close");  
     digitalWrite(2, HIGH);   // turn the LED on (HIGH is the voltage level)
     delay(1000);                       // wait for a second
-    digitalWrite(2, LOW);    // turn the LED off by making the voltage LOW
-    delay(100);
-    Serial.println("Janice and Nat are out like this LED light");
-  }
+  }else{
+     digitalWrite(2, LOW);   // turn the LED off (HIGH is the voltage level)
+    }
+  delay(100);
 }

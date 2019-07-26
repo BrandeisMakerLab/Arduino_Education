@@ -7,7 +7,7 @@ void setup() {
   //starts the connection between the robot and the computer
   Serial.begin(9600);
   //wait for connection to start
-  delay(2000);
+  delay(2);
 }
 
 void loop() {
