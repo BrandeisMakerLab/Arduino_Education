@@ -19,6 +19,11 @@ void loop() {
   // set the brightness of pin 9:
   for (int i = 0; i < maxBrightness; i++) {
     analogWrite(led,i);
+    delay(20);
+  }
+
+  for (int i = maxBrightness; i > 0; i--) {
+    analogWrite(led,i);
     delay(10);
   }
 }
