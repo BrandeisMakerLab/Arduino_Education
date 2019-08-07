@@ -29,7 +29,7 @@ void loop() {
   distance = distancesensor.getDistance();
   //display distance to screen
   Serial.println(distance);
-  if (distance < 50 && distance>0) {
+  if (distance < 200 && distance>0) {
     digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
     digitalWrite(7, HIGH);   // turn the LED on (HIGH is the voltage level)
     delay(500);
