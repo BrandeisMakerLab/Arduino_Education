@@ -16,7 +16,7 @@ void setup() {
 
   void move() {
     moveforward(30);
-    bool dark =true;
+    bool dark =false;
     if (dark) {
       pivotright(90);
       moveforward(30);

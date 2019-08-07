@@ -9,48 +9,8 @@ void setup() {
   Serial.begin(9600);
   //wait for connection to start
   delay(2000);
-  move(); 
+
 }
-  void loop() {}
-
-
-  void move() {
-    moveforward(30);
-    bool dark =false;
-    if (dark) {
-      pivotright(90);
-      moveforward(30);
-    }
-    if (dark) {
-      pivotleft(90);
-      moveforward(30);
-    }
-
-    dark = false;
-    // blink light
-    // digitalWrite(led, HIGH);
-    // digitalWrite(led, LOW);
-    //loop move toward the light forward
-    //
-    //
-    // while senses dark
-    // digitalWrite(led, HIGH);
-    // move();
-    //
-    //if senses light more than blah blah amount
-    //stop for 5 seconds
-    //digitalWrite(led, LOW);
-
-  }
-  void moveforward(int angle) {
-    Serial.print("imoveforward");
-    Serial.println(angle);
-  }
-  void pivotright(int angle) {
-    Serial.print("ipivotright");
-    Serial.println(angle);
-  }
-  void pivotleft(int angle) {
-    Serial.print("ipivotleft");
-    Serial.println(angle);
-  }
+  void loop() {
+    Serial.println("Hello World!");   
+ }

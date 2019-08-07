@@ -26,11 +26,7 @@ void printTwice(){
   printThrice();
 }
 void printThrice(){
-  Serial.println("Janice and Nat rock");
-  Serial.println("Janice and Nat rock");
-  Serial.println("Janice and Nat rock"); 
-  Serial.println("Janice and Nat rock");
-  Serial.println("Janice and Nat rock");
-  Serial.println("Janice and Nat rock"); 
-  
+  Serial.println("Look I can print");
+  Serial.println("Look I can print");
+  Serial.println("Look I can print"); 
 }
