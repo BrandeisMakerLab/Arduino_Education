@@ -4,12 +4,11 @@ Into Robotics Tutorial from https://www.intorobotics.com/tutorial-how-to-control
  
 #include <Servo.h>  //add '<' and '>' before and after servo.h
  
-int servoPin = 9;
+int servoPin = 10;
 int angle;
  
 Servo servo;  
- 
-int servoAngle = 0;   // servo position in degrees
+
 int time =1000;
 void setup()
 {
@@ -21,18 +20,12 @@ void setup()
 void loop()
 {
 //control the servo's direction and the position of the motor
-   servo.write(45);      // Turn SG90 servo Left to 45 degrees
+   servo.attach(servoPin);
+   servo.write(0);      // Turn SG90 servo Left to 45 degrees
+   delay(time);     
+   
+   servo.attach(servoPin);
+   servo.write(180);
    delay(time);          // Wait 1 second
-   servo.write(90);      // Turn SG90 servo back to 90 degrees (center position)
-   delay(time);          // Wait 1 second
-   servo.write(135);     // Turn SG90 servo Right to 135 degrees
-   delay(time);          // Wait 1 second
-   servo.write(90);      // Turn SG90 servo back to 90 degrees (center position)
-   delay(time);
-//end control the servo's direction and the position of the motor
-/*
-  servo.write(angle);
-  delay(time);
-  angle = (angle + 1) % 180;
-  */
+
 }
