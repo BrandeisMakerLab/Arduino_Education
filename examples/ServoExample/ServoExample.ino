@@ -1,5 +1,6 @@
 /*
-Into Robotics Tutorial from https://www.intorobotics.com/tutorial-how-to-control-the-tower-pro-sg90-servo-with-arduino-uno/
+Intro Server Tutorial from https://www.intorobotics.com/tutorial-how-to-control-the-tower-pro-sg90-servo-with-arduino-uno/
+Curated by Brandeis Automation Lab
 */
  
 #include <Servo.h>  //add '<' and '>' before and after servo.h
