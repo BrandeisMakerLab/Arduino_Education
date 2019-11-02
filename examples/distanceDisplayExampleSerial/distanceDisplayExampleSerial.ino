@@ -9,15 +9,15 @@ DistanceSensor distancesensor;
 //the distance to the sensor
 
 int distance;
-int LED=13;
+
 
 //runs once
 void setup() {
+  pinMode(2, OUTPUT);
   //sets up the class
   distancesensor.begin(10, 11);
   //sets up the class with minimum and maximum values
   Serial.begin(9600);
-  pinMode(LED,OUTPUT);
 
 }
 
@@ -27,10 +27,5 @@ void loop() {
   distance = distancesensor.getDistance();
   //display distance to screen
   Serial.println(distance);
-  if(distance<40){
-     digitalWrite(LED,HIGH);
-  }else{
-    digitalWrite(LED,LOW); 
-  }
   delay(200);
 }
