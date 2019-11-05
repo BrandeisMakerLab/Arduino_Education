@@ -10,15 +10,13 @@ DistanceSensor distancesensor;
 
 int distance;
 
-
 //runs once
 void setup() {
-  pinMode(2, OUTPUT);
   //sets up the class
   distancesensor.begin(10, 11);
   //sets up the class with minimum and maximum values
   Serial.begin(9600);
-
+  pinMode(2, OUTPUT);
 }
 
 //runs many times
@@ -27,5 +25,21 @@ void loop() {
   distance = distancesensor.getDistance();
   //display distance to screen
   Serial.println(distance);
-  delay(200);
+  if(distance<200){
+    //encode distance for calibration
+    pulseXTimes(distance/10);
+    delay(2000);
+}
+}
+void pulseXTimes(int numTimes){
+  for(int i=0;i<numTimes;i++){
+      pulse(200);
+  }
+}
+
+void pulse(int pulseTime){
+ digitalWrite(2, HIGH);
+  delay(pulseTime);
+  digitalWrite(2, LOW);
+  delay(pulseTime);      
 }

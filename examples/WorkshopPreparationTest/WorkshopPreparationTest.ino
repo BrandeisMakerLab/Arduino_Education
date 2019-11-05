@@ -1,5 +1,5 @@
-/* Prints distance to screen
-   Created from example program and turned into class by Jacob Smith
+/* Prints distance and blinks LED so I can prepare workshop kits
+ *  Jcob Smith 11/1/2019 Braneis Univeristy Automation Laborotory
 */
 //includes the libraries of code necessary to make this one work
 #include <DistanceSensor.h>
@@ -27,5 +27,10 @@ void loop() {
   distance = distancesensor.getDistance();
   //display distance to screen
   Serial.println(distance);
-  delay(200);
+  if (distance<50 && distance >6){
+     digitalWrite(2, HIGH);   // turn the LED on (HIGH is the voltage level)
+  }else{
+    digitalWrite(2, LOW);    // turn the LED off by making the voltage LOW 
+  }
+  delay(500);            
 }
