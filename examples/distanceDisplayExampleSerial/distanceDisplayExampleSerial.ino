@@ -13,7 +13,6 @@ int distance;
 
 //runs once
 void setup() {
-  pinMode(2, OUTPUT);
   //sets up the class
   distancesensor.begin(10, 11);
   //sets up the class with minimum and maximum values
@@ -23,9 +22,7 @@ void setup() {
 
 //runs many times
 void loop() {
-  //gets the distance from the ultrasonic sensor
-  distance = distancesensor.getDistance();
-  //display distance to screen
+  distance=distancesensor.getDistance();
   Serial.println(distance);
   delay(200);
 }

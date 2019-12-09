@@ -5,7 +5,7 @@ Curated by Brandeis Automation Lab
  
 #include <Servo.h>  //add '<' and '>' before and after servo.h
  
-int servoPin = 10;
+int servoPin = 12;
 int angle;
  
 Servo servo;  
