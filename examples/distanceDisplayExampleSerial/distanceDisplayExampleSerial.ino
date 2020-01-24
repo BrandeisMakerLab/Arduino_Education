@@ -8,7 +8,7 @@
 DistanceSensor distancesensor;
 //the distance to the sensor
 
-int distance;
+double distance;
 
 
 //runs once
@@ -22,7 +22,8 @@ void setup() {
 
 //runs many times
 void loop() {
-  distance=distancesensor.getDistance();
+  
+  distance=distancesensor.getDistance()*.00337;
   Serial.println(distance);
-  delay(200);
+  delay(500);
 }
