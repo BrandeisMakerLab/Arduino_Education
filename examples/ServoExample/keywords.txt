@@ -1,3 +1,0 @@
-//Generates ARDUINO KEYWORDS for ServoExample class
-ServoExample	KEYWORD1
-begin	KEYWORD2

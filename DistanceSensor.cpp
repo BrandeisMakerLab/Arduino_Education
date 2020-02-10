@@ -27,7 +27,7 @@ void DistanceSensor::begin(int trigPin, int echoPin) {
 }
 
 //gets the distance from the ultrasonic sensor
-int DistanceSensor::getDistance() {
+double DistanceSensor::getDistance() {
     // Clears the trigPin
     digitalWrite(trigPin, LOW);
     delayMicroseconds(2);
@@ -38,7 +38,7 @@ int DistanceSensor::getDistance() {
     // Reads the echoPin, returns the sound wave travel time in microseconds
     int duration = pulseIn(echoPin, HIGH);
     // Calculating the distance
-    int distance = duration * 500 / 2;
+    double distance = duration * .034 / 2;
     // Prints the distance on the Serial Monitor
     return distance;
 

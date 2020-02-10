@@ -10,7 +10,7 @@ void setup() {
   delay(2000);
   //print hello world to screen
   Serial.println("Hello World!");
-  Serial.println("This is Jacob");
+  Serial.println("This is a test");
   printTwice();
   printTwice();
   printTwice();

@@ -1,6 +1,5 @@
 //imports the library that must be used to run this program
 #include <DHT.h>
-#include <DHT_U.h>
 #define BLUEPIN 4
 #define REDPIN 3
 //initializes the part so that the program knows what to expect to run

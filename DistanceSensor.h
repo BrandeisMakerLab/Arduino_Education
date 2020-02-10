@@ -27,6 +27,6 @@ class DistanceSensor{
     //Initializes the class, can't always be done at same time as constructor
     void begin(int trigPin, int echoPin);
     //gets the distance from the ultrasonic sensor
-    int getDistance();
+    double getDistance();
 };
 #endif

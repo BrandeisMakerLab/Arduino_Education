@@ -6,7 +6,7 @@ int pinA = 3;  // Connected to CLK on KY-040
  int pinALast;  
  int aVal;
  boolean bCW;
-
+int prev=0;
  void setup() { 
    pinMode (pinA,INPUT);
    pinMode (pinB,INPUT);
@@ -29,16 +29,13 @@ int pinA = 3;  // Connected to CLK on KY-040
      } else {// Otherwise B changed first and we're moving CCW
        bCW = false;
        encoderPosCount--;
-     }
-     Serial.print ("Rotated: ");
-     if (bCW){
-       Serial.println ("clockwise");
-     }else{
-       Serial.println("counterclockwise");
-     }
-     Serial.print("Encoder Position: ");
-     Serial.println(encoderPosCount);
-     
+     }  
    } 
+    
+  if(encoderPosCount!=prev){
+    Serial.println("Only care about this");
+      Serial.println(encoderPosCount);
+  }
+   prev=encoderPosCount;
    pinALast = aVal;
  } 
