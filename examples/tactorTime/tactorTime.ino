@@ -1,4 +1,4 @@
-/* Prints distance to screen
+/* vibrates tactor for x milliseconds base don how far away object is
    Created from example program and turned into class by Jacob Smith
 */
 //includes the libraries of code necessary to make this one work
@@ -8,14 +8,15 @@
 DistanceSensor distancesensor;
 //distance sensor sees
 int distance;
-//the port of the vibrator
 int vibPin=2;
+//the port of the vibrator
 //runs once
 void setup() {
   //sets up the class
   distancesensor.begin(10, 11);
   //sets up the class with minimum and maximum values
   Serial.begin(9600);
+  //set vibrator to output
   pinMode(vibPin, OUTPUT);
 
 }
@@ -26,12 +27,13 @@ void loop() {
   distance = distancesensor.getDistance();
   //display distance to screen
   Serial.println(distance);
-  //vibrates if distance is within range
+  //if distance is withing range, pulse depending on range
   if (distance < 80 && distance>15) {
+    // turn the port on
     digitalWrite(vibPin, HIGH);   
-  //otherwise turns fibrator off and waits x milliseconds
-  } else {                  
-    digitalWrite(vibPin, LOW);    
-  }
-  delay(500);
+    //wait for x milliseconds
+    delay(distance*10);
+    digitalWrite(vibPin, LOW);
+     delay(distance*10); 
+  }  
 }
