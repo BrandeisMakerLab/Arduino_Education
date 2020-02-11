@@ -2,31 +2,33 @@
 Intro Server Tutorial from https://www.intorobotics.com/tutorial-how-to-control-the-tower-pro-sg90-servo-with-arduino-uno/
 Curated by Brandeis Automation Lab
 */
- 
+//include the library needed to run the servo
 #include <Servo.h>  //add '<' and '>' before and after servo.h
- 
-int servoPin = 12;
-int angle;
- 
+//name the servo
 Servo servo;  
 
+//how long the motor moves
 int time =1000;
+//runs once
 void setup()
 {
+  //establish serial connection
   Serial.begin(9600);  
-  servo.attach(servoPin);
+  //save the port number  
+  int number = 12;
+  //attach motor
+  servo.attach(number);
 }
- 
- 
-void loop()
+//runs many times
+ void loop()
 {
-//control the servo's direction and the position of the motor
-   servo.attach(servoPin);
-   servo.write(0);      // Turn SG90 servo Left to 45 degrees
+   //move the servo to a position
+   servo.write(0);  
+   //wait a certain amount of time    
    delay(time);     
-   
-   servo.attach(servoPin);
-   servo.write(180);
-   delay(time);          // Wait 1 second
 
+   //move the servo to another position
+   servo.write(180);
+   //wait a certain amount of time
+   delay(time);
 }
