@@ -27,10 +27,10 @@ class ArduinoEducation{
 		//creates a new ArduinoEducation object
 		ArduinoEducation();
 		//gives an array to the ArduinoEducation class and prints the length
-		void ArduinoEducation::begin (int pins [], int numPins);
+		void begin (int pins [], int numPins);
 
 		//prints all the pins in the array to prove it was stored in memory
-		void ArduinoEducation::printPins();
+		void printPins();
 	
 };
 

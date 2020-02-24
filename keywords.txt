@@ -1,12 +1,18 @@
+
+//Generates ARDUINO KEYWORDS for ArduinoEducation class
 ArduinoEducation	KEYWORD1
 begin	KEYWORD2
 printPins KEYWORD2
-
-Display	KEYWORD1
-begin	KEYWORD2
-showMeter	KEYWORD2
 
 //Generates ARDUINO KEYWORDS for DistanceSensor class
 DistanceSensor	KEYWORD1
 begin	KEYWORD2
 getDistance	KEYWORD2
+
+//Generates ARDUINO KEYWORDS for TactorRig class
+TactorRig	KEYWORD1
+begin	KEYWORD2
+getDistance	KEYWORD2
+vibrateOnOff	KEYWORD2
+vibrateEncode	KEYWORD2
+vibrateTime	KEYWORD2
