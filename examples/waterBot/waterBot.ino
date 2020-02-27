@@ -41,8 +41,7 @@ void setup() {
    swimStop(500);
    Serial.println("Waterbot Test Program");
    Serial.println("Navigates around pool");
-   Serial.println("Prints distance in cm and whether wall was found");
-  
+   Serial.println("Prints distance in cm and whether wall was found"); 
 }
 
 //runs many times

@@ -1,5 +1,6 @@
 /*https://www.youtube.com/watch?v=IKD5Jhyg_cc 
  * controls a passive buzzer plugged in to ports 11 and gnd in Arduino
+ * Curated by Jacob Smith Brandeis University 
 */
 int buzzerPin=11;
 int time=500;
