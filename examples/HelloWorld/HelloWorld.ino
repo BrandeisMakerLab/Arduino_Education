@@ -9,8 +9,9 @@ void setup() {
   Serial.begin(9600);
   //wait for connection to start
   delay(2000);
+  Serial.println("Hello World!");   
 
 }
   void loop() {
-    Serial.println("Hello World!");   
+   Serial.println("Hi");
  }
