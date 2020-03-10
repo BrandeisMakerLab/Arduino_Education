@@ -54,7 +54,7 @@ void loop() {
       Serial.print("\tFound Wall");
       swimBackward(1000);
       swimStop(1000);
-      swimLeft(1000);
+      swimRight(2000);
       swimStop(500);
   }else{
    swimForward(0);
