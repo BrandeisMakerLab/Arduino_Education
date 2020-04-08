@@ -20,7 +20,9 @@
   This example code is in the public domain.
 
   http://www.arduino.cc/en/Tutorial/Blink
+  Use 1k-220 ohm resistor if using LED
 */
+//the port the LED is on
 int PIN = 3;
 // the setup function runs once when you press reset or power the board
 void setup() {
