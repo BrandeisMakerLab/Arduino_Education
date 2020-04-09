@@ -15,7 +15,7 @@ void setup()
   //establish serial connection
   Serial.begin(9600);  
   //save the port number  
-  int number = 12;
+  int number = 11;
   //attach motor
   servo.attach(number);
 }
