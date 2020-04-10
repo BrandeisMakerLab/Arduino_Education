@@ -1,7 +1,7 @@
 /*
- * Temperature Pressure Sensor Demo
+ * Temperature Pressure Altitude Sensor Demo for 16 sensor kit
  * Curated by Jacob Smith for Brandeis Automation Laboratory
- * From: https://simple-circuit.com/
+ * From: https://simple-circuit.com/arduino-bmp280-sensor-lcd/
  */
 //include background library for sensor
 #include <Adafruit_BME280.h>  // include adafruit library for BME280 sensor
