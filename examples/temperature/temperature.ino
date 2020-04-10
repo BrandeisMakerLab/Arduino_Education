@@ -1,4 +1,4 @@
-/*Temperature Sensor
+/*Temperature Sensor for 37 sensor kit
  * https://www.instructables.com/id/Arduino-37-in-1-Sensors-Kit-Explained/
  * Curated Jacob Smith Brandeis University
 */
