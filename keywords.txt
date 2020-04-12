@@ -16,3 +16,15 @@ getDistance	KEYWORD2
 vibrateOnOff	KEYWORD2
 vibrateEncode	KEYWORD2
 vibrateTime	KEYWORD2
+
+//Generates ARDUINO KEYWORDS for MotorsGeneral class
+MotorsGeneral	KEYWORD1
+begin	KEYWORD2
+setSpeeds	KEYWORD2
+
+
+//Generates ARDUINO KEYWORDS for TonePlayer class
+tone	KEYWORD1
+begin	KEYWORD2
+noTone	KEYWORD2
+

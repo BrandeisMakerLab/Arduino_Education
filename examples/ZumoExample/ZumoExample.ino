@@ -4,27 +4,26 @@
  March 8 2018
  */
 //includes the header file of the library
-#include <DriveShield.h>
+#include <MotorsGeneral.h>
 
 //creates a global reference to a Drive object
-DriveShield robot;
+MotorsGeneral robot;
 
 //occurs before the program enters its main loop
-void setup() {
-  
-  //set motor power to random number
-  robot.setPower(400);
-  //commands the robot to stop for 2 seconds
-  robot.stopDrive(2000);
+//blank here because no setup is required
+void setup() {}
 
-}
-//the main loop of the robot
-
+//the main loop of the robot, runs forever
 void loop() {
-  //commands the robot to perform each step for half a second
-  robot.driveForward(500);
-  robot.turnRight(300);
-  robot.turnLeft(300);
-  robot.driveBackward(500);
-  robot.stopDrive(500);
+  //commands the robot to drive forward, numbers are left speed, right speed, and time
+  //so this command is frive forward for half a second
+  robot.setSpeeds(300,300,500);
+  //drive backward
+  robot.setSpeeds(-300,-300,500);
+  //turn right
+  robot.setSpeeds(300,-300,500);
+  //turn left
+  robot.setSpeeds(-300,300,500);
+  //stop
+  robot.setSpeeds(0,0,500);
 }
