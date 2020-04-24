@@ -11,7 +11,7 @@ int lowLightLevel;
 int lightLevel;
 
 //save the port number  
-  int PIN = 3;
+  int PIN = 11;
   
 //runs once at start
 void setup() {
