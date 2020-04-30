@@ -7,13 +7,14 @@ int inPin = 7;
 //the current value of the input device  
 bool val;
 
-/include the necessary background library
+//include the necessary background library
 #include <TonePlayer.h>
 
 //Use the Tone player background code, using the name tone1 to refer to it by
 TonePlayer tone1 (TCCR1A, TCCR1B, OCR1AH, OCR1AL, TCNT1H, TCNT1L);
 //runs once to set things up for the loop
 void setup() {
+   pinMode (9, OUTPUT);  // output pin is fixed (OC1A)
   //connect to the computer (at baud rate 9600)
   Serial.begin(9600);
   //wait for computer to connect
@@ -36,7 +37,6 @@ void loop(){
   }else{
      tone1.noTone ();
   }
-
     delay(500);
 }
 
