@@ -10,7 +10,7 @@ double distance;
 //runs once
 void setup() {
   //start the distance sensor
-  distancesensor.begin(10, 11);
+  distancesensor.begin(5, 6);
   //start the usb connection to the computer
   Serial.begin(9600);
 
