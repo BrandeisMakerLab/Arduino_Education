@@ -1,6 +1,7 @@
 /* Curated by Brandeis University
- *  Basic Analog read ,can be used with capacitive touch sensor
+ *  Basic Analog read ,can be used with capacitive touch sensor and water level sensor
  *  https://makersportal.com/blog/2018/9/21/capacitive-touch-sensor-with-arduino
+ *  https://www.youtube.com/watch?v=n7WRi5U5lQk
  */
 //the current value of the input device  
 long val;
@@ -21,8 +22,9 @@ void loop(){
   //print the value to the screen
   Serial.println(val);
   //wait half a second
-  delay(500);
+  delay(100);
 }
+
 
 
  
