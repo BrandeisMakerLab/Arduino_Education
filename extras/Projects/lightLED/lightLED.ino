@@ -22,7 +22,7 @@ void setup() {
   //print message asking user to turn lights off
   Serial.println("Night Light Example, please turn lights off for calibration");
   //wait x milliseconds
-  delay(8000);  
+  delay(5000);  
   Serial.println("Program turn the LED on when the light level is low");
   //take initial reading to calibrate the photoresistor, with a margin of error 
   lowLightLevel=analogRead(A0)-3;
@@ -35,7 +35,7 @@ void setup() {
    Serial.println(lightLevel);
    
    //if the light level is low
-   if(lightLevel<20){
+   if(lightLevel<10){
       // turn the LED on (HIGH is the voltage level)
       digitalWrite(LEDPORT, HIGH);   
    }else{
