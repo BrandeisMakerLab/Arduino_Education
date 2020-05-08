@@ -2,7 +2,7 @@
    Curated by Jacob Smith for Brandeis University Automation Lab
    From:https://www.instructables.com/id/Arduino-Infrared-Remote-tutorial/
    and https://forum.arduino.cc/index.php?topic=119545.0
-   This uses the reomte included in the keeyess 16 snesor kit,
+   This uses the reomte included in the keeyess 16 sensor kit,
    other remotes will have different codes
 */
 //the infrared remote background library
