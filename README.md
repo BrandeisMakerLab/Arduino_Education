@@ -9,4 +9,3 @@ Currently used for Arduino Electronics workshops and Brandeis Augmenting the Hum
 Documentation can be found [here](https://github.com/jsmith2021Brandeis/Arduino-Class-Maker)
 
 -Jacob Smith  jsmith2021@brandeis.edu
-test
