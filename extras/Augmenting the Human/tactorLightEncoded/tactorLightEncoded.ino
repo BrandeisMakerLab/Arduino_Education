@@ -24,6 +24,12 @@ void setup() {
   Serial.println("Program will print calibrated light level, try turning lights on and off");
   //take initial reading to calibrate the photoresistor, with a margin of error 
   lowLightLevel=analogRead(A0)-3;
+  //turn vibrator pin on to signal ready to measure
+  digitalWrite(vibPin, HIGH); 
+  //wait x milliseconds
+  delay(500);
+  //turn vibrator pin off
+  digitalWrite(vibPin, LOW);
 }
 
 //runs many times
