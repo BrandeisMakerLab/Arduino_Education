@@ -1,5 +1,6 @@
 /* reads the light level, if light level is high vibrates vibrotactor
-
+    This version vibrates faster for higher levels of light
+    Brandeis Augmenting the Human Iniative 5/14/2020 Jacob Smith
 */
 
 //the port of the vibrator
@@ -8,7 +9,10 @@ int vibPin=2;
 int lowLightLevel;
 //variable which stores the current calibrated light level
 int lightLevel;
-
+//converts light level to appropriate time to pulse
+int SCALING_FACTOR=16;
+//estimate of max light level so time response function can be created
+int MAX_LIGHT=40;
 //runs once
 void setup() {
   
@@ -19,7 +23,7 @@ void setup() {
   //print message asking user to turn lights off
   Serial.println("Photoresistor/Light Sensor Example, please turn lights off for calibration");
   //wait x milliseconds
-  delay(8000);  
+  delay(4000);  
   Serial.println("Program will print calibrated light level, try turning lights on and off");
   //take initial reading to calibrate the photoresistor, with a margin of error 
   lowLightLevel=analogRead(A0)-3;
@@ -33,10 +37,14 @@ void loop() {
    Serial.println(lightLevel);
   //vibrates if distance is within range
   if (lightLevel > 10) {
-    digitalWrite(vibPin, HIGH);   
-  //otherwise turns fibrator off and waits x milliseconds
-  } else {                  
-    digitalWrite(vibPin, LOW);    
-  }
-  delay(500);
+    //turn vibrator on
+    digitalWrite(vibPin, HIGH); 
+    //use this equation to determine how long pulse is
+    //pulses faster if light level is higher
+    delay(MAX_LIGHT*SCALING_FACTOR-lightLevel*SCALING_FACTOR);  
+    //turn tactor off
+    digitalWrite(vibPin, LOW); 
+    //same function as above
+    delay(MAX_LIGHT*SCALING_FACTOR-lightLevel*SCALING_FACTOR);  
+  }   
 }
