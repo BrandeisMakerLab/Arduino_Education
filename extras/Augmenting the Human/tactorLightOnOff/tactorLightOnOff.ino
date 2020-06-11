@@ -19,10 +19,16 @@ void setup() {
   //print message asking user to turn lights off
   Serial.println("Photoresistor/Light Sensor Example, please turn lights off for calibration");
   //wait x milliseconds
-  delay(8000);  
+  delay(4000);  
   Serial.println("Program will print calibrated light level, try turning lights on and off");
   //take initial reading to calibrate the photoresistor, with a margin of error 
   lowLightLevel=analogRead(A0)-3;
+  //turn vibrator pin on to signal ready to measure
+  digitalWrite(vibPin, HIGH); 
+  //wait x milliseconds
+  delay(500);
+  //turn vibrator pin off
+  digitalWrite(vibPin, LOW);
 }
 
 //runs many times
@@ -33,10 +39,13 @@ void loop() {
    Serial.println(lightLevel);
   //vibrates if distance is within range
   if (lightLevel > 10) {
+    //turn tactor on 
     digitalWrite(vibPin, HIGH);   
   //otherwise turns fibrator off and waits x milliseconds
-  } else {                  
+  } else {                
+    //turn tactor off  
     digitalWrite(vibPin, LOW);    
   }
+  //wait x milliseconds so pulse is percievable by human
   delay(500);
 }
