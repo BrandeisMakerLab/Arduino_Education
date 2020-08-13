@@ -4,7 +4,8 @@
  *  
  *Installing Background Code 
  *   Go to sketch-->include library-->manage libraries
- *  and search BNO055, pick adafruit, and select "install all"
+ *  and search BNO055, pick adafruit, and select "install", then "install all"
+ *  on the next window
  *  
  * Wiring
  *  SCL-Analog 5
