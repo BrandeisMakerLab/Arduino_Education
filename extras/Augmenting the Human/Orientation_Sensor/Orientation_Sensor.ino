@@ -1,14 +1,16 @@
 /**
  * Example for the BN-55 Orientation Sensor
  * https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/assembly
+ *  
+ *Installing Background Code 
  *   Go to sketch-->include library-->manage libraries
  *  and search BNO055, pick adafruit
  *  
- *  Wiring
- * SCL-Analog 5
- * SDA-Analog 4
- * Gnd-Gnd
- * Vin-5V
+ * Wiring
+ *  SCL-Analog 5
+ *  SDA-Analog 4
+ *  Gnd-Gnd
+ *  Vin-5V
  */
 
 #include <Wire.h>
