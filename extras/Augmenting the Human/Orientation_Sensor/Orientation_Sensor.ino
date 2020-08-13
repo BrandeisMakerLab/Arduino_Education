@@ -7,7 +7,7 @@
  *  and search BNO055, pick adafruit, and select "install", then "install all"
  *  on the next window
  *  
- * Wiring
+ * Wiring (Sensor - Arduino)
  *  SCL-Analog 5
  *  SDA-Analog 4
  *  Gnd-Gnd
