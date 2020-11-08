@@ -8,9 +8,10 @@
 //imports the library that must be used to run this program
 #include <DHT.h>
 
-//sets up the sensor, plugged into digital port 2
+//sets up the sensor, plugged into digital port 3
 DHT dht(3,DHT11);
 
+//runs once
 void setup() {
   //initialize serial port (allows for commuication with arduino by clicking on the magnifying glass
   //on the top right corner of the window AFTER the program is uploaded
@@ -19,6 +20,8 @@ void setup() {
   dht.begin();
   Serial.println("Humidity\tTemperature");
 }
+
+//runs many times
 void loop() {
 
   //read the humidity
@@ -33,5 +36,4 @@ void loop() {
   Serial.println(temp);
   //wait x milliseconds so printout it slower
   delay(1000);
-  
 }
