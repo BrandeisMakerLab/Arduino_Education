@@ -10,7 +10,7 @@ void setup() {
   //connect to the computer (at baud rate 9600)
   Serial.begin(9600);
   //wait for computer to connect
-  while(!Serial){}
+  delay(2000);
   //print welcome message
   Serial.println("Analog Input Example Program"); 
 }
