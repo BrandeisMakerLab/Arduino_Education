@@ -37,7 +37,9 @@ void loop(){}
 
 //showes void return type, which returns nothing
 void returnsNothing(int a, int b){
-	a+b;
+	Serial.pint("a is\t");
+	//note how the answer is printed here since the method does not return
+	Serial.println(a+b);
 }
 
 //shows in return type, which returns integer
