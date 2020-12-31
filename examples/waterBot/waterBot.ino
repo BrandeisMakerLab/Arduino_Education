@@ -1,6 +1,5 @@
-/* Example program for waterbot written by jacob smith
+/*  Example program for waterbot written by Jacob Smith 2/14/20
  *  allows the waterbot to navigate through a pool, not tested in water
- *  Brandeis Robotics Club Feb 14 2020
  *  https://www.kickstarter.com/projects/slantrobotics/waterbot-arduino-water-robotics-kit
 */
 

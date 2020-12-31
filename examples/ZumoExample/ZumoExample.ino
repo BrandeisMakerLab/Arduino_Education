@@ -1,7 +1,5 @@
-/*Written by Jacob Smith for Brandeis Robotics Club
- contains an example program to use the DriveShield class
- with a random motor power each time the robot turns on
- March 8 2018
+/*Written by Jacob Smith for Brandeis Robotics Club  March 8 2018
+ Drives the motor at set powers si it moves in a pattern
  */
 //includes the header file of the library
 #include <MotorsGeneral.h>

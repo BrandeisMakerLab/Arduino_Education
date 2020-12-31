@@ -1,6 +1,6 @@
-/*Prins data from the vibration sensor to the serial monitor
- * Prepared for by Jacob Smith for Brandeis Automation Labrotaory 5/1/20 
-  https://www.youtube.com/watch?v=2pc2ehkSEAI */
+/*   Prepared for by Jacob Smith for Brandeis Automation Labrotaory 5/1/20 
+ *   Prints data from the vibration sensor to the serial monitor
+ *   https://www.youtube.com/watch?v=2pc2ehkSEAI */
 //the port of the vibration sensor
 int sensorPort =7; 
 //the vibration level

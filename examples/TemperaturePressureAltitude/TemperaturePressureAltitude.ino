@@ -1,6 +1,5 @@
-/*
+/* Curated by Jacob Smith for Brandeis Automation Laboratory 12/31/20
  * Temperature Pressure Altitude Sensor Demo for 16 sensor kit
- * Curated by Jacob Smith for Brandeis Automation Laboratory
  * From: https://simple-circuit.com/arduino-bmp280-sensor-lcd/
  */
 //include background library for sensor
