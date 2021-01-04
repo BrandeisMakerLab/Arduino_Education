@@ -12,7 +12,7 @@ void setup() {
   //connect to the computer (at baud rate 9600)
   Serial.begin(9600);
   //wait for computer to connect
-  while(!Serial){}
+  delay(1000);
   //print welcome message
   Serial.println("Digital Input Example Program");
   // declare that port as an input

@@ -15,11 +15,11 @@ void setup() {
   //starts the connection between the robot and the computer
   Serial.begin(9600);
   //wait for connection to start
-  while(!Serial){}
+  delay(1000);
   //print message asking user to turn lights off
   Serial.println("Photoresistor/Light Sensor Example, please turn lights off for calibration");
   //wait x milliseconds
-  delay(8000);  
+  delay(3000);  
   Serial.println("Program will print calibrated light level, try turning lights on and off");
   //take initial reading to calibrate the photoresistor, with a margin of error 
   lowLightLevel=analogRead(A0)-3;

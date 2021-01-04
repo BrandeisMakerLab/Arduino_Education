@@ -13,7 +13,7 @@ void setup()
   ///start usb connection to Arduino
   Serial.begin(9600);
   //wait for connectino to start
-  while(!Serial){} 
+  delay(1000);
   //print demonstration prompt
   Serial.println("Temperature Humidity Pressure Sensor Demonstration");
   //start the snesor at specified address
