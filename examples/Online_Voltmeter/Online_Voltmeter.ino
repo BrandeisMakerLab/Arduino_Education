@@ -1,5 +1,5 @@
 /* Jacob Smith for Brandeis Automation Lab 1/5/20
-	Uses the Arduino as a voltmeter to measure the voltage in 
+  Uses the Arduino as a voltmeter to measure the voltage in 
     an LED blink example
 */
 //the port the LED is on
