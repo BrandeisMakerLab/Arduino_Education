@@ -25,14 +25,12 @@ void loop()
   Serial.print("\t");
   Serial.println(lightOneTime);
  
-  //if bechmakr time is greater than interval, reset it
-  if (millis()-lightOneTime >2000){
+  //if bechmakr time is greater than interval
+  if (millis()-lightOneTime >500){
+    //reset the time
   	lightOneTime=millis();
-  //if elapsed time is greater than half interval turn light on
-	}else if (millis()-lightOneTime > 1000){
-    	digitalWrite(13,HIGH);
-  //if elapsed time is lass than half interval, turn light off
-  	}else { 
-    	digitalWrite(13,LOW);
-  	}
+    //also flip light
+    //!digitalRead(13) means set light to opposite of what it was
+    digitalWrite(13,!digitalRead(13));
+  }
 }
