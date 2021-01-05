@@ -21,7 +21,7 @@ void loop() {
   delay(2000);
   
   //turn light on at half power
-  analogWrite(led,127);
+  analogWrite(led,50);
   //wait x miliseconds
   delay(2000);
   
