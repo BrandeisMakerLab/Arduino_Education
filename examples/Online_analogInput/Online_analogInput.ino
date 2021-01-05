@@ -22,7 +22,7 @@ void loop(){
   val = analogRead(A0); 
   //print the value to the screen
   Serial.println(val);
-  //wait half a second
+  //x millisceonds
   delay(100);
 }
 
