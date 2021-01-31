@@ -21,8 +21,8 @@ void setup() {
   //wait x milliseconds
   delay(3000);  
   Serial.println("Program will print calibrated light level, try turning lights on and off");
-  //take initial reading to calibrate the photoresistor, with a margin of error 
-  lowLightLevel=analogRead(A0)-3;
+  //take initial reading to calibrate the photoresistor
+  lowLightLevel=analogRead(A0);
 }
 //repeats forever
   void loop() {
